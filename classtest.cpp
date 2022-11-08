@@ -11,7 +11,7 @@ void father::test()
 }
 void father::testconst(const int c_first)
 {
-    cout<<"常量输出："<<c_first<<std::endl;
+    cout<<"形参可自动强制转换，常量输出："<<c_first<<std::endl;
 }
 void testconst()
 {
@@ -27,11 +27,11 @@ int main(void)
 {
     son son1;
     father father1;
-    const int tmp=1;
+    int tmp=1;
     father1.test();
     son1.test();
-    father1.testconst(1);
-    son1.testconst(1);
+    father1.testconst(tmp);
+    son1.testconst(tmp);
     testconst();
     return 0;
 }
