@@ -9,13 +9,17 @@ void father::test()
 {
     cout<<"this is f";
 }
+void father::testconst(const int c_first)
+{
+    cout<<"å¸¸é‡è¾“å‡ºï¼š"<<c_first<<std::endl;
+}
 void testconst()
 {
     double a=3.14;
     const double b=a;
-    cout<<"Ë«¾«¶È³£Á¿¸³Öµ£¬±»¿½±´Öµ¿É²»Îª³£Á¿"<<b;
+    cout<<"åŒç²¾åº¦å¸¸æ•°èµ‹å€¼ï¼Œè¢«æ‹·è´å¯ä¸ä¸ºå¸¸é‡"<<b;
     const int c=a;
-    cout<<"ÕûĞÍ³£Á¿¸³Öµ£¬±»¿½±´Öµ¿É²»ÎªÕûĞÍ"<<c;
+    cout<<"æ•´å‹å¸¸é‡èµ‹å€¼ï¼Œè¢«æ‹·è´å€¼å¯ä¸ä¸ºæ•´å‹"<<c;
     cout<<std::endl;
     cout<<c;
 }
@@ -23,8 +27,11 @@ int main(void)
 {
     son son1;
     father father1;
-   father1.test();
+    const int tmp=1;
+    father1.test();
     son1.test();
+    father1.testconst(1);
+    son1.testconst(1);
     testconst();
     return 0;
 }
