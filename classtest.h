@@ -11,3 +11,4 @@ class son :public father
     virtual void test(void);
    // void testconst(const int c_son);
 };
+

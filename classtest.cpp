@@ -1,5 +1,7 @@
 #include<iostream>
 #include "classtest.h"
+#include"pointtest.h"
+#include"pointtest.cpp"
 using std::cout;
 void son::test()
 {
@@ -33,5 +35,6 @@ int main(void)
     father1.testconst(tmp);
     son1.testconst(tmp);
     testconst();
+    testpoint();
     return 0;
 }
